@@ -596,30 +596,3 @@ $light-text: #222222;
 
 }
 </style>
-
-<style lang="scss">
-.swiper-button-next::after,
-.swiper-button-prev::after {
-    content: '';
-    width: 16px;
-    height: 24px;
-    object-fit: contain;
-    background-image: url('../assets/icons/slider-arrow.svg');
-}
-
-.swiper-button-prev::after {
-    transform: rotate(180deg);
-}
-
-.swiper-button-prev {
-    top: 12px;
-    right: 80px;
-    left: auto;
-}
-
-.swiper-button-next {
-    top: 12px;
-    right: 40px;
-    left: auto;
-}
-</style>

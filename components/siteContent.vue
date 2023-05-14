@@ -1,46 +1,62 @@
 <template>
+    <div @click="openVideo"
+        :class="{ active: isOpenVideo }"
+        class="filter"></div>
     <div class="partners container">
-        <swiper :slidesPerView="5"
+        <swiper :slidesPerView="3"
             :modules="modules"
             :autoplay="{
                 delay: 2500,
                 disableOnInteraction: false,
             }"
+            :loop="true"
+            :breakpoints="{
+                992: {
+                    slidesPerView: 5,
+                },
+                768: {
+                    slidesPerView: 4,
+                },
+            }"
             class="mySwiper">
             <swiper-slide>
-                <img src="../assets/image/company.png"
+                <img src="../assets/image/companies/1.png"
                     alt="company">
             </swiper-slide>
             <swiper-slide>
-                <img src="../assets/image/company.png"
+                <img src="../assets/image/companies/2.png"
                     alt="company">
             </swiper-slide>
             <swiper-slide>
-                <img src="../assets/image/company.png"
+                <img src="../assets/image/companies/3.png"
                     alt="company">
             </swiper-slide>
             <swiper-slide>
-                <img src="../assets/image/company.png"
+                <img src="../assets/image/companies/4.png"
                     alt="company">
             </swiper-slide>
             <swiper-slide>
-                <img src="../assets/image/company.png"
+                <img src="../assets/image/companies/5.png"
                     alt="company">
             </swiper-slide>
             <swiper-slide>
-                <img src="../assets/image/company.png"
+                <img src="../assets/image/companies/1.png"
                     alt="company">
             </swiper-slide>
             <swiper-slide>
-                <img src="../assets/image/company.png"
+                <img src="../assets/image/companies/2.png"
                     alt="company">
             </swiper-slide>
             <swiper-slide>
-                <img src="../assets/image/company.png"
+                <img src="../assets/image/companies/3.png"
                     alt="company">
             </swiper-slide>
             <swiper-slide>
-                <img src="../assets/image/company.png"
+                <img src="../assets/image/companies/4.png"
+                    alt="company">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="../assets/image/companies/5.png"
                     alt="company">
             </swiper-slide>
         </swiper>
@@ -55,12 +71,22 @@
         <div class="video-box">
             <img src="../assets/image/video-image.jpg"
                 alt="video imaage">
-            <a class="video-btn"
-                href="">
+            <a @click="openVideo"
+                class="video-btn">
                 <img draggable="false"
                     src="../assets/image/play-btn.png"
                     alt="play">
             </a>
+        </div>
+        <div :class="{ active: isOpenVideo }"
+            class="video__item">
+            <iframe width="560"
+                height="315"
+                src="https://www.youtube.com/embed/ccqqaSQm6dc"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
     </section>
 
@@ -153,10 +179,22 @@
             </div>
 
             <div class="slider__content">
-                <swiper :slidesPerView="3.5"
+                <swiper :slidesPerView="1"
                     :spaceBetween="40"
                     :navigation="true"
                     :modules="modules"
+                    :loop="true"
+                    :breakpoints="{
+                        660: {
+                            slidesPerView: 2,
+                        },
+                        992: {
+                            slidesPerView: 3,
+                        },
+                        1100: {
+                            slidesPerView: 3.5,
+                        },
+                    }"
                     class="mySwiper">
                     <swiper-slide>
                         <div class="slider__content-item">
@@ -172,12 +210,34 @@
                     <swiper-slide>
                         <div class="slider__content-item">
                             <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
+                                src="../assets/icons/slider-icons/icon2.svg"
                                 alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
+                            <h3 class="slider__content-title">Reduce capital <br> expenses</h3>
+                            <p class="slider__content-text">We can beat any PARCS’s
+                                offer by 30% and up to 3
+                                times</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="slider__content-item">
+                            <img class="slider__content-icon"
+                                src="../assets/icons/slider-icons/icon3.svg"
+                                alt="slider icon">
+                            <h3 class="slider__content-title">Increased <br> bottomline</h3>
                             <p class="slider__content-text">No tickets, barcodes or long
                                 lines. Just quick, free flow
                                 parking parking experience</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="slider__content-item">
+                            <img class="slider__content-icon"
+                                src="../assets/icons/slider-icons/icon4.svg"
+                                alt="slider icon">
+                            <h3 class="slider__content-title">Minimal <br> investment</h3>
+                            <p class="slider__content-text">Our subscription plans let
+                                you get started today with
+                                little to no down payment.</p>
                         </div>
                     </swiper-slide>
                     <swiper-slide>
@@ -194,9 +254,20 @@
                     <swiper-slide>
                         <div class="slider__content-item">
                             <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
+                                src="../assets/icons/slider-icons/icon2.svg"
                                 alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
+                            <h3 class="slider__content-title">Reduce capital <br> expenses</h3>
+                            <p class="slider__content-text">We can beat any PARCS’s
+                                offer by 30% and up to 3
+                                times</p>
+                        </div>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <div class="slider__content-item">
+                            <img class="slider__content-icon"
+                                src="../assets/icons/slider-icons/icon3.svg"
+                                alt="slider icon">
+                            <h3 class="slider__content-title">Increased <br> bottomline</h3>
                             <p class="slider__content-text">No tickets, barcodes or long
                                 lines. Just quick, free flow
                                 parking parking experience</p>
@@ -205,23 +276,12 @@
                     <swiper-slide>
                         <div class="slider__content-item">
                             <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
+                                src="../assets/icons/slider-icons/icon4.svg"
                                 alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
-                            <p class="slider__content-text">No tickets, barcodes or long
-                                lines. Just quick, free flow
-                                parking parking experience</p>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="slider__content-item">
-                            <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
-                                alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
-                            <p class="slider__content-text">No tickets, barcodes or long
-                                lines. Just quick, free flow
-                                parking parking experience</p>
+                            <h3 class="slider__content-title">Minimal <br> investment</h3>
+                            <p class="slider__content-text">Our subscription plans let
+                                you get started today with
+                                little to no down payment.</p>
                         </div>
                     </swiper-slide>
                 </swiper>
@@ -416,23 +476,41 @@ import 'swiper/css/navigation';
 import { Autoplay, Navigation } from 'swiper';
 
 const modules = ref([Autoplay, Navigation]);
+
+const isOpenVideo = ref(false)
+
+const openVideo = () => {
+    isOpenVideo.value = !isOpenVideo.value
+}
 </script>
 
 <style lang="scss" scoped>
+.filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: vh;
+    z-index: 10;
+    background: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s all;
+
+    &.active {
+        transition: .2s all;
+        opacity: 0.5;
+        visibility: visible;
+    }
+}
+
 $white-text: #ffffff;
 $raleway: 'Raleway', sans-serif;
 $primary-color: #00FF91;
 $light-text: #222222;
 
-.btn-primary {
-    background: $primary-color;
-    border-radius: 4px;
-    padding: 11px 24px 12px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-}
 
 
 .partners {
@@ -440,14 +518,14 @@ $light-text: #222222;
 
     .swiper {
         width: 100%;
-        height: 100%;
+        height: 120px;
     }
 
     .swiper-slide {
         text-align: center;
         font-size: 18px;
         background: #fff;
-
+        height: 100%;
         /* Center slide text vertically */
         display: flex;
         justify-content: center;
@@ -458,7 +536,7 @@ $light-text: #222222;
         display: block;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
 }
 
@@ -481,6 +559,8 @@ $light-text: #222222;
     &-box {
         margin-top: 90px;
         position: relative;
+        display: flex;
+        justify-content: center;
 
         &::before {
             content: '';
@@ -490,27 +570,97 @@ $light-text: #222222;
             width: 246px;
             height: 246px;
             background-color: $primary-color;
+
+            @media (max-width:992px) {
+                width: 80px;
+                height: 80px;
+                left: 5px;
+                top: -40px;
+            }
+
+            @media (max-width:500px) {
+                width: 60px;
+                height: 60px;
+                left: 0px;
+                top: -25px;
+            }
         }
 
         &::after {
             content: '';
             position: absolute;
             bottom: -30px;
-            right: 10px;
+            right: -30px;
             width: 246px;
             height: 246px;
             background-image: url('../assets/image/cutted-square.png');
+
+            @media (max-width:992px) {
+                width: 100px;
+                height: 110px;
+                right: 20px;
+                bottom: -15px;
+                background-position: center;
+                background-size: cover;
+            }
+
+            @media (max-width:500px) {
+                width: 60px;
+                height: 60px;
+                right: 10px;
+                bottom: -10px;
+            }
+        }
+
+        img {
+            width: 90%;
         }
     }
 
     &-btn {
+        cursor: pointer;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
             user-select: none;
+
+            @media (max-width: 576px) {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+
+    &__item {
+        border: 2px solid $primary-color;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+        padding: 10px;
+        background-color: $primary-color;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s all;
+        z-index: 11;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+            transition: .3s all;
+            transform: translate(-50%, -50%);
+        }
+
+        video {
+            width: 100% !important;
+            height: 100% !important;
         }
     }
 }
@@ -521,14 +671,33 @@ $light-text: #222222;
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 650px) {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
     &__left {
         width: 46%;
+
+        @media (max-width: 650px) {
+            width: 100%;
+        }
 
         &-title {
             font-weight: 500;
             font-size: 64px;
             line-height: 67px;
             color: $light-text;
+
+            @media (max-width: 992px) {
+                font-weight: 500;
+                font-size: 51px;
+                line-height: 54px;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 38px;
+            }
         }
 
         &-texts {
@@ -537,6 +706,10 @@ $light-text: #222222;
             display: flex;
             flex-direction: column;
             gap: 30px;
+
+            @media (max-width: 500px) {
+                margin-top: 16px;
+            }
 
             p {
                 font-weight: 400;
@@ -583,11 +756,23 @@ $light-text: #222222;
     &__right {
         width: 45%;
 
+        @media (max-width: 650px) {
+            width: 100%;
+        }
+
         &-title {
             font-weight: 500;
-            font-size: 51.2px;
+            font-size: 51px;
             line-height: 54px;
             color: $light-text;
+
+            @media (max-width: 500px) {
+                font-size: 38px;
+            }
+
+            @media (max-width: 500px) {
+                margin-top: 16px;
+            }
         }
 
         &-subtitle {
@@ -596,6 +781,10 @@ $light-text: #222222;
             line-height: 27px;
             color: $light-text;
             margin-top: 36px;
+
+            @media (max-width: 500px) {
+                margin-top: 16px;
+            }
         }
     }
 
@@ -657,6 +846,10 @@ $light-text: #222222;
     padding-bottom: 0px;
     position: relative;
 
+    @media (max-width: 576px) {
+        padding: 20px 0px 0px 0px;
+    }
+
     &::before {
         content: '';
         position: absolute;
@@ -666,6 +859,12 @@ $light-text: #222222;
         background-size: cover;
         left: -20px;
         top: -90px;
+
+        @media (max-width: 576px) {
+            width: 130px;
+            height: 130px;
+            top: -25px;
+        }
     }
 
     &::after {
@@ -696,11 +895,21 @@ $light-text: #222222;
 
         .swiper {
             position: relative;
-            right: -40px;
+            right: -36px;
             width: 100%;
             height: 100%;
             padding-top: 110px;
-            transform: translateY(-110px);
+            margin-top: -110px;
+            padding-bottom: 80px;
+
+            @media (max-width: 1100px) {
+                right: 0;
+            }
+
+            @media (max-width:850px) {
+                padding-top: 60px;
+                margin-top: -60px;
+            }
         }
 
         .swiper-slide {
@@ -747,6 +956,11 @@ $light-text: #222222;
     width: 100%;
     min-height: 810px;
 
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
     &-bg {
         position: absolute;
         left: 0;
@@ -757,6 +971,12 @@ $light-text: #222222;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            position: relative;
+            min-height: 500px;
+        }
 
         &.first {
             background-image: url('../assets/image/image-1.jpg');
@@ -793,11 +1013,17 @@ $light-text: #222222;
         min-height: 800px;
         justify-content: flex-end;
         align-items: center;
+
+        @media (max-width: 576px) {
+            min-height: auto;
+            padding: 30px 0px;
+        }
     }
 
     &__content {
         width: 50%;
         padding: 36px 50px;
+
 
         &-title {
             font-weight: 500;
@@ -856,6 +1082,23 @@ $light-text: #222222;
             margin-top: 30px;
             color: #157FFF;
         }
+
+        @media (max-width: 992px) {
+            padding-left: 25px;
+
+            &-title {
+                font-size: 40px;
+                line-height: 46px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media (max-width: 576px) {
+            padding: 12px;
+        }
     }
 
     &.right-side {
@@ -887,11 +1130,17 @@ $light-text: #222222;
                 background-color: transparent;
                 background-size: cover;
                 background-image: url('../assets/image/cutted-square-two.png');
+
+                @media (max-width: 576px) {
+                    width: 100px;
+                    height: 100px;
+                }
             }
         }
 
         .half__content {
             padding-top: 55px;
+            padding-bottom: 60px
         }
     }
 
@@ -909,5 +1158,32 @@ $light-text: #222222;
         }
     }
 
+}
+</style>
+
+<style lang="scss">
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '';
+    width: 16px;
+    height: 24px;
+    object-fit: contain;
+    background-image: url('../assets/icons/slider-arrow.svg');
+}
+
+.swiper-button-prev::after {
+    transform: rotate(180deg);
+}
+
+.swiper-button-prev {
+    top: 12px;
+    right: 80px;
+    left: auto;
+}
+
+.swiper-button-next {
+    top: 12px;
+    right: 40px;
+    left: auto;
 }
 </style>

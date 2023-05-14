@@ -16,16 +16,19 @@
   font-family: 'Inter', sans-serif;
 }
 
+body {
+  min-width: 400px;
+}
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 8px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: rgb(212, 212, 212);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: gray;
 }
 

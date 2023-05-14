@@ -10,13 +10,13 @@
                     <h3 class="footer__item-title">Menu</h3>
                     <ul class="footer__item-list">
                         <li>
-                            <a href="#">Solutions</a>
+                            <nuxt-link to="/solutions">Solutions</nuxt-link>
                         </li>
                         <li>
-                            <a href="#">Company</a>
+                            <nuxt-link to="/company">Company</nuxt-link>
                         </li>
                         <li>
-                            <a href="#">Contacts</a>
+                            <nuxt-link to="/contacts">Contacts</nuxt-link>
                         </li>
                     </ul>
                 </div>
@@ -66,8 +66,10 @@ $light-text: #222222;
     &__content {
         display: flex;
         align-items: flex-start;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-bottom: 40px;
+        gap: 40px;
+        flex-wrap: wrap;
     }
 
     &-logo {

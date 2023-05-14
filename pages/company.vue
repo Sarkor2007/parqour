@@ -143,10 +143,6 @@ $light-text: #222222;
     z-index: 2;
     margin-bottom: 300px;
 
-    @media (max-width: 768px) {
-        margin-bottom: 130px;
-    }
-
     img {
         padding: 0px 12px;
         left: 0;
@@ -155,6 +151,11 @@ $light-text: #222222;
         position: absolute;
         transform: translateY(-50%);
     }
+
+    @media (max-width: 768px) {
+        margin-bottom: 130px;
+    }
+
 
     @media (max-width: 576px) {
         margin-top: 30px;

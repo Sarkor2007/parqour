@@ -174,16 +174,6 @@ $raleway: 'Raleway', sans-serif;
 $primary-color: #00FF91;
 $light-text: #222222;
 
-.btn-primary {
-    background: $primary-color;
-    border-radius: 4px;
-    padding: 11px 24px 12px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-}
-
 
 
 .header {
@@ -193,6 +183,14 @@ $light-text: #222222;
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 850px;
+
+    @media (max-width: 640px) {
+        min-height: 950px;
+    }
+
+    @media (max-width: 576px) {
+        min-height: 870px;
+    }
 
     &__main {
         max-width: 710px;
@@ -208,6 +206,11 @@ $light-text: #222222;
             line-height: 64px;
             text-align: center;
             color: $white-text;
+
+            @media (max-width: 510px) {
+                font-size: 40px;
+                line-height: 50px;
+            }
         }
 
         &-subtitle {
@@ -233,10 +236,26 @@ $light-text: #222222;
         justify-content: space-between;
         width: 90%;
 
+        @media (max-width: 640px) {
+            flex-direction: column;
+            row-gap: 20px;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 576px) {
+            row-gap: 30px;
+        }
+
+
         &-item {
             display: flex;
             align-items: center;
             gap: 16px;
+
+            @media (max-width: 640px) {
+                gap: 50px;
+            }
+
         }
 
         &-img {
@@ -283,6 +302,34 @@ $light-text: #222222;
         position: absolute;
         transform: translateY(-50%);
     }
+
+    @media (max-width: 992px) {
+        img {
+            height: 400px;
+            object-fit: cover;
+        }
+    }
+
+    @media (max-width: 768px) {
+        img {
+            padding: 0px;
+            transform: translateY(-30%);
+        }
+    }
+
+
+    @media (max-width: 576px) {
+        margin-top: 30px;
+        height: 400px;
+        margin-bottom: 30px;
+
+        img {
+            height: 100%;
+            position: static;
+            transform: translateY(-0%);
+            object-position: right;
+        }
+    }
 }
 
 .answers {
@@ -299,10 +346,17 @@ $light-text: #222222;
         background-size: contain;
         bottom: -80px;
         right: 0;
+
+        @media (max-width: 992px) {
+            width: 80px;
+            height: 80px;
+            bottom: 0px;
+            right: -10px;
+        }
     }
 
     .answers-wrapper {
-        padding: 90px 0px 80px;
+        padding: 90px 12px 85px;
         max-width: 756px;
         width: 100%;
         margin: auto;
@@ -366,6 +420,11 @@ $light-text: #222222;
                     font-size: 23px;
                     line-height: 25px;
                     color: $light-text;
+
+                    @media (max-width: 576px) {
+                        font-size: 18px;
+                        line-height: 22px;
+                    }
                 }
 
                 &.active {
@@ -430,6 +489,10 @@ $light-text: #222222;
         background-position: center right;
         background-size: auto 100%;
         background-repeat: no-repeat;
+
+        @media (max-width: 992px) {
+            width: 100%;
+        }
     }
 
     &-title {
@@ -437,6 +500,11 @@ $light-text: #222222;
         font-size: 64px;
         line-height: 67px;
         color: $white-text;
+
+        @media (max-width: 576px) {
+            font-size: 36px;
+            line-height: 40px;
+        }
     }
 
     &-btn {
@@ -467,6 +535,10 @@ $light-text: #222222;
         z-index: 1;
         padding: 0px 80px;
 
+        @media (max-width: 576px) {
+            padding: 0px;
+        }
+
         &-title {
             margin-top: 70px;
             font-weight: 500;
@@ -482,6 +554,28 @@ $light-text: #222222;
             line-height: 27px;
             color: $white-text;
         }
+    }
+}
+</style>
+
+
+<style lang="scss">
+$primary-color: #00FF91;
+
+.btn-primary {
+    background: $primary-color;
+    border-radius: 4px;
+    padding: 11px 24px 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s all;
+
+    &:hover {
+        transition: .3s all;
+        background-color: #aeffdc;
     }
 }
 </style>

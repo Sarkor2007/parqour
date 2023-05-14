@@ -1,513 +1,600 @@
 <template>
-    <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <div class="header-logo">
-                    <img src="../assets/icons/logo.svg"
-                        alt="logo">
-                </div>
-                <nav class="header__nav">
-                    <ul>
-                        <li class="header__nav-item">
-                            <a href="">Home</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="">Solutions</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="">Company</a>
-                        </li>
-                        <li class="header__nav-item">
-                            <a href="">Contacts</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <main class="header__main">
-                <h1 class="header__main-title">
-                    Shift your parking operation into top gear.
-                </h1>
-                <h3 class="header__main-subtitle">
-                    Parqour is a software platform that simplifies parking operations and improves the customer experience.
-                    It
-                    offers real-time data, automated plate recognition, and contactless payments.
-                </h3>
-                <button class="header__main-btn btn-primary">
-                    Book a demo
-                </button>
-                <div class="header__box">
-                    <div class="header__box-item">
-                        <div class="header__box-img">
-                            <img src="../assets/icons/planet.svg"
-                                alt="planet">
-                        </div>
-                        <div class="header__box-info">
-                            <h3 class="header__box-title">22</h3>
-                            <p class="header__box-text">Countries</p>
-                        </div>
+    <div class="page">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header-logo">
+                        <img src="../assets/icons/logo.svg"
+                            alt="logo">
                     </div>
-                    <div class="header__box-item">
-                        <div class="header__box-img">
-                            <img src="../assets/icons/parking.svg"
-                                alt="planet">
-                        </div>
-                        <div class="header__box-info">
-                            <h3 class="header__box-title">+300</h3>
-                            <p class="header__box-text">Parking areas</p>
-                        </div>
-                    </div>
-                    <div class="header__box-item">
-                        <div class="header__box-img">
-                            <img src="../assets/icons/car.svg"
-                                alt="planet">
-                        </div>
-                        <div class="header__box-info">
-                            <h3 class="header__box-title">+100M</h3>
-                            <p class="header__box-text">Vehicles</p>
-                        </div>
-                    </div>
+                    <nav class="header__nav">
+                        <ul>
+                            <li class="header__nav-item">
+                                <a href="">Home</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Solutions</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Company</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </main>
-        </div>
-    </header>
-    <div class="main-banner container">
-        <img src="../assets/image/banner-bg.jpg"
-            alt="banner">
-    </div>
-
-    <div class="partners container">
-        <swiper :slidesPerView="5"
-            :modules="modules"
-            :autoplay="{
-                delay: 2500,
-                disableOnInteraction: false,
-            }"
-            class="mySwiper">
-            <swiper-slide>
-                <img src="../assets/image/company.png"
-                    alt="company">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="../assets/image/company.png"
-                    alt="company">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="../assets/image/company.png"
-                    alt="company">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="../assets/image/company.png"
-                    alt="company">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="../assets/image/company.png"
-                    alt="company">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="../assets/image/company.png"
-                    alt="company">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="../assets/image/company.png"
-                    alt="company">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="../assets/image/company.png"
-                    alt="company">
-            </swiper-slide>
-            <swiper-slide>
-                <img src="../assets/image/company.png"
-                    alt="company">
-            </swiper-slide>
-        </swiper>
-    </div>
-
-    <section class="video">
-        <h1 class="video-title">
-            Meet the solution that is
-            transforming the parking
-            industry!
-        </h1>
-        <div class="video-box">
-            <img src="../assets/image/video-image.jpg"
-                alt="video imaage">
-            <a class="video-btn"
-                href="">
-                <img draggable="false"
-                    src="../assets/image/play-btn.png"
-                    alt="play">
-            </a>
-        </div>
-    </section>
-
-
-    <section class="about container">
-        <div class="about__left">
-            <h2 class="about__left-title">
-                Why Parqour?
-            </h2>
-            <div class="about__left-texts">
-                <p>Parqour offers a comprehensive end-to-end management platform to
-                    increase revenue, reduce operational cost and enhance transparency.</p>
-                <p>Say goodbye to piecing together different vendors and integrations.
-                    No need to spend huge capital on bulky hardware. Control all
-                    operations from one platform.</p>
-                <p>Contactless parking and online payment methods makes the parking
-                    experience easier for your customers too. The end result: higher
-                    utilization and lower operating costs.</p>
-            </div>
-            <ul class="about__facts">
-                <li class="about__facts-item">99,6% license plate recognition rate</li>
-                <li class="about__facts-item">Online QR payment & 3rd party APIs
-                    <p>(integrated with Parkmobile, SpotHero, Honk, PayByPhone)</p>
-                </li>
-                <div class="about__facts-item">
-                    Data analytics
-                    <p>(real-time occupancy, revenue, utilization, parking trends)</p>
-                </div>
-                <div class="about__facts-item">
-                    Validation and permit management
-                    <p>(free flow access for approved drivers)</p>
-                </div>
-                <div class="about__facts-item">
-                    24/7 remote control system
-                </div>
-                <div class="about__facts-item">
-                    Hardware with zero upfront costs
-                </div>
-                <div class="about__facts-item">
-                    Zoning and violation detection
-                    <p>(control POD, VIP and nested zones)</p>
-                </div>
-            </ul>
-        </div>
-        <div class="about__right">
-            <h1 class="about__right-title">How does it work?</h1>
-            <h4 class="about__right-subtitle">
-                Use case: gated/gate-less paid parking
-            </h4>
-            <ul class="about__list">
-                <li class="about__list-item">
-                    <h3 class="about__list-title">
-                        Drive-in
+                <main class="header__main">
+                    <h1 class="header__main-title">
+                        Shift your parking operation into top gear.
+                    </h1>
+                    <h3 class="header__main-subtitle">
+                        Parqour is a software platform that simplifies parking operations and improves the customer
+                        experience.
+                        It
+                        offers real-time data, automated plate recognition, and contactless payments.
                     </h3>
-                    <p class="about__list-text">
-                        The license plate is automatically detected and the
-                        system starts parking session
-                    </p>
-                </li>
-                <li class="about__list-item">
-                    <h3 class="about__list-title">
-                        Park & register
-                    </h3>
-                    <p class="about__list-text">
-                        First time visitors will be instructed to scan QR and
-                        register once
-                    </p>
-                </li>
-                <li class="about__list-item">
-                    <h3 class="about__list-title">
-                        Drive-out
-                    </h3>
-                    <p class="about__list-text">
-                        Driver is charged automatically
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="slider">
-        <div class="container">
-            <div class="slider__head">
-                <div class="slider__head-img">
-                    <img src="../assets/icons/logo-icon.svg"
-                        alt="logo">
-                </div>
-                <div class="slider__head-title">
-                    Get all-in-one with Parqour
-                </div>
-            </div>
-
-            <div class="slider__content">
-                <swiper :slidesPerView="3.5"
-                    :spaceBetween="40"
-                    :navigation="true"
-                    :modules="modules"
-                    class="mySwiper">
-                    <swiper-slide>
-                        <div class="slider__content-item">
-                            <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
-                                alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
-                            <p class="slider__content-text">No tickets, barcodes or long
-                                lines. Just quick, free flow
-                                parking parking experience</p>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="slider__content-item">
-                            <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
-                                alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
-                            <p class="slider__content-text">No tickets, barcodes or long
-                                lines. Just quick, free flow
-                                parking parking experience</p>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="slider__content-item">
-                            <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
-                                alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
-                            <p class="slider__content-text">No tickets, barcodes or long
-                                lines. Just quick, free flow
-                                parking parking experience</p>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="slider__content-item">
-                            <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
-                                alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
-                            <p class="slider__content-text">No tickets, barcodes or long
-                                lines. Just quick, free flow
-                                parking parking experience</p>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="slider__content-item">
-                            <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
-                                alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
-                            <p class="slider__content-text">No tickets, barcodes or long
-                                lines. Just quick, free flow
-                                parking parking experience</p>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="slider__content-item">
-                            <img class="slider__content-icon"
-                                src="../assets/icons/slider-icons/icon.svg"
-                                alt="slider icon">
-                            <h3 class="slider__content-title">Satisfied <br> customers</h3>
-                            <p class="slider__content-text">No tickets, barcodes or long
-                                lines. Just quick, free flow
-                                parking parking experience</p>
-                        </div>
-                    </swiper-slide>
-                </swiper>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="half">
-        <div class="half-bg first"></div>
-        <div class="container">
-            <div class="half-wrapper">
-                <div class="half__content">
-                    <h1 class="half__content-title">
-                        Parqour for
-                        gated parking
-                    </h1>
-                    <p class="half__content-text">
-                        <b> Entry</b> - Transients enter without tickets. No need to
-                        register before entering the parking facility. The
-                        system automatically recognizes the license plate and
-                        starts the parking session. Drivers with reservations
-                        through platforms like ParkMobile, SpotHero,
-                        PayByPhone or Honk enter the parking seamlessly
-                        without scanning a barcode and tickets.
-                    </p>
-                    <p class="half__content-text">
-                        <b> Payment</b> – users have numerous payment options:
-                    <ul class="half__content-options">
-                        <li>
-                            <p><b> Online/web based app</b> - No need to download an
-                                app, users scan the QR code, that leads to a
-                                payment page</p>
-                        </li>
-                        <li>
-                            <p><b> Terminal payment </b> - cash, credit card, Apple Pay,
-                                Google Pay</p>
-                        </li>
-                    </ul>
-                    </p>
-                    <p class="half__content-text">
-                        <b> Exit</b> – The license plate is detected and the session
-                        ends
-                    </p>
-                    <div class="half__content-message">No tickets, no attendants, no lines!</div>
-                    <button class="half__content-btn btn-primary">
-                        Learn More
+                    <button class="header__main-btn btn-primary">
+                        Book a demo
                     </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="half right-side">
-        <div class="half-bg second"></div>
-        <div class="container">
-            <div class="half-wrapper">
-                <div class="half__content">
-                    <h1 class="half__content-title">
-                        Parqour for
-                        gated parking
-                    </h1>
-                    <p class="half__content-text">
-                        <b> Entry </b> - Transients enter without barriers and tickets. The
-                        system automatically captures the license plate and starts the
-                        billing session.
-                    </p>
-                    <p class="half__content-text">
-                        <b> Payment</b> - First time visitors are instructed to scan QR code
-                        and register in the system by entering their license plate and
-                        adding preferred payment methods (credit card,
-                        Apple/Google pay).
-                    </p>
-                    <p class="half__content-text">
-                        <b> Exit</b> - Registered drivers are charged automatically from a
-                        credit card for the duration of their stay.
-                    </p>
-                    <div class="half__content-message">Returning drivers can enter and exit seamlessly, the system
-                        charges them automatically on exit.</div>
-                    <button class="half__content-btn btn-primary">
-                        Learn More
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="half">
-        <div class="half-bg third"></div>
-        <div class="container">
-            <div class="half-wrapper">
-                <div class="half__content">
-                    <h1 class="half__content-title">
-                        Parqour for
-                        valet parking
-                    </h1>
-                    <p class="half__content-text">
-                        <b> Parking</b> - Camera automatically captures the license
-                        plate at the entry
-                    </p>
-                    <p class="half__content-text">
-                        <b> Check-in</b> - easy driver registration and communication
-                        via SMS
-                    </p>
-                    <p class="half__content-text">
-                        <b> Payment</b> - Customers pay with one touch via a mobile
-                        app – compatible with Apple Pay and Google Pay.
-                    </p>
-                    <p class="half__content-text">
-                        <b> Exit</b> - The license plate is recorded and the session
-                        ends
-                    </p>
-                    <div class="half__content-message">Enhance transparency of financial flows and control
-                        operations from one platform.</div>
-                    <button class="half__content-btn btn-primary">
-                        Learn More
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="half right-side">
-        <div class="half-bg fourth"></div>
-        <div class="container">
-            <div class="half-wrapper">
-                <div class="half__content">
-                    <h1 class="half__content-title">
-                        Parqour for
-                        parking validation
-                        & permit
-                        management
-                    </h1>
-                    <p class="half__content-text">
-                        <b> Use cases: </b> employee and tenant parking, monthly permit
-                        management - seamless access for monthly parkers and drivers with
-                        reservations made by third party platforms
-                    <ul class="half__content-options">
-                        <li>
-                            <p><b> Entry </b>- The system checks the license plate and status of the
-                                permit</p>
-                        </li>
-                        <li>
-                            <p><b> Exit</b> - All entry-exit events are logged and displayed in reports
-                            </p>
-                            <div class="options__items">
-                                <h3 class="options__items-item">
-                                    No more hang tags, RFID cards and barcode scanning
-                                </h3>
-                                <h3 class="options__items-item">
-                                    Integrated with all major reservation platforms (SpotHero,
-                                    ParkMobile, Honk, PayByPhone etc.)
-                                </h3>
+                    <div class="header__box">
+                        <div class="header__box-item">
+                            <div class="header__box-img">
+                                <img src="../assets/icons/planet.svg"
+                                    alt="planet">
                             </div>
-
-                        </li>
-                    </ul>
-                    </p>
-                    <div class="half__content-message">Parking validation</div>
-                    <p class="half__content-text">
-                        <b> Use cases:</b> parking validation for hotel, restaurant, shopping mall,
-                        fitness club, hospital visitors etc.
-                    </p>
-
-                    <p class="half__content-text">
-                        <b> Via dashboard.</b> Company/Hotel/Restaurant administrators can
-                        validate the parking session by entering the license plate to the
-                        system using a web based dashboard. Access period can be
-                        customized.
-                    </p>
-                    <p class="half__content-text">
-                        <b> Via</b> promo code. Company administrator/receptionist distribute
-                        promo codes, hotel, restaurant guests easily add the code to their
-                        account by scanning the QR code.
-                    </p>
-
-                    <button class="half__content-btn btn-primary">
-                        Learn More
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="answers">
-        <div class="answers-wrapper">
-            <h1 class="answers-title">Frequently asked questions</h1>
-            <div class="answers__content">
-                <ul class="akkordeon__list">
-                    <li v-for="(item, index) in akkordeonList"
-                        :key="index"
-                        :class="{ active: item.active }"
-                        class="akkordeon__item">
-                        <div @click="changeActive(item)"
-                            :class="{ active: item.active }"
-                            class="akkordeon__item-head">
-                            <h3>{{ item.header }}</h3>
-                        </div>
-                        <div :class="{ active: item.active }"
-                            class="akkordeon__item-content">
-                            <div class="akkordeon__item-text">
-                                {{ item.content }}
+                            <div class="header__box-info">
+                                <h3 class="header__box-title">22</h3>
+                                <p class="header__box-text">Countries</p>
                             </div>
                         </div>
+                        <div class="header__box-item">
+                            <div class="header__box-img">
+                                <img src="../assets/icons/parking.svg"
+                                    alt="planet">
+                            </div>
+                            <div class="header__box-info">
+                                <h3 class="header__box-title">+300</h3>
+                                <p class="header__box-text">Parking areas</p>
+                            </div>
+                        </div>
+                        <div class="header__box-item">
+                            <div class="header__box-img">
+                                <img src="../assets/icons/car.svg"
+                                    alt="planet">
+                            </div>
+                            <div class="header__box-info">
+                                <h3 class="header__box-title">+100M</h3>
+                                <p class="header__box-text">Vehicles</p>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </header>
+        <div class="main-banner container">
+            <img src="../assets/image/banner-bg.jpg"
+                alt="banner">
+        </div>
+
+        <div class="partners container">
+            <swiper :slidesPerView="5"
+                :modules="modules"
+                :autoplay="{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }"
+                class="mySwiper">
+                <swiper-slide>
+                    <img src="../assets/image/company.png"
+                        alt="company">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../assets/image/company.png"
+                        alt="company">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../assets/image/company.png"
+                        alt="company">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../assets/image/company.png"
+                        alt="company">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../assets/image/company.png"
+                        alt="company">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../assets/image/company.png"
+                        alt="company">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../assets/image/company.png"
+                        alt="company">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../assets/image/company.png"
+                        alt="company">
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="../assets/image/company.png"
+                        alt="company">
+                </swiper-slide>
+            </swiper>
+        </div>
+
+        <section class="video">
+            <h1 class="video-title">
+                Meet the solution that is
+                transforming the parking
+                industry!
+            </h1>
+            <div class="video-box">
+                <img src="../assets/image/video-image.jpg"
+                    alt="video imaage">
+                <a class="video-btn"
+                    href="">
+                    <img draggable="false"
+                        src="../assets/image/play-btn.png"
+                        alt="play">
+                </a>
+            </div>
+        </section>
+
+        <section class="whyus container">
+            <div class="whyus__left">
+                <h2 class="whyus__left-title">
+                    Why Parqour?
+                </h2>
+                <div class="whyus__left-texts">
+                    <p>Parqour offers a comprehensive end-to-end management platform to
+                        increase revenue, reduce operational cost and enhance transparency.</p>
+                    <p>Say goodbye to piecing together different vendors and integrations.
+                        No need to spend huge capital on bulky hardware. Control all
+                        operations from one platform.</p>
+                    <p>Contactless parking and online payment methods makes the parking
+                        experience easier for your customers too. The end result: higher
+                        utilization and lower operating costs.</p>
+                </div>
+                <ul class="whyus__facts">
+                    <li class="whyus__facts-item">99,6% license plate recognition rate</li>
+                    <li class="whyus__facts-item">Online QR payment & 3rd party APIs
+                        <p>(integrated with Parkmobile, SpotHero, Honk, PayByPhone)</p>
+                    </li>
+                    <div class="whyus__facts-item">
+                        Data analytics
+                        <p>(real-time occupancy, revenue, utilization, parking trends)</p>
+                    </div>
+                    <div class="whyus__facts-item">
+                        Validation and permit management
+                        <p>(free flow access for approved drivers)</p>
+                    </div>
+                    <div class="whyus__facts-item">
+                        24/7 remote control system
+                    </div>
+                    <div class="whyus__facts-item">
+                        Hardware with zero upfront costs
+                    </div>
+                    <div class="whyus__facts-item">
+                        Zoning and violation detection
+                        <p>(control POD, VIP and nested zones)</p>
+                    </div>
+                </ul>
+            </div>
+            <div class="whyus__right">
+                <h1 class="whyus__right-title">How does it work?</h1>
+                <h4 class="whyus__right-subtitle">
+                    Use case: gated/gate-less paid parking
+                </h4>
+                <ul class="whyus__list">
+                    <li class="whyus__list-item">
+                        <h3 class="whyus__list-title">
+                            Drive-in
+                        </h3>
+                        <p class="whyus__list-text">
+                            The license plate is automatically detected and the
+                            system starts parking session
+                        </p>
+                    </li>
+                    <li class="whyus__list-item">
+                        <h3 class="whyus__list-title">
+                            Park & register
+                        </h3>
+                        <p class="whyus__list-text">
+                            First time visitors will be instructed to scan QR and
+                            register once
+                        </p>
+                    </li>
+                    <li class="whyus__list-item">
+                        <h3 class="whyus__list-title">
+                            Drive-out
+                        </h3>
+                        <p class="whyus__list-text">
+                            Driver is charged automatically
+                        </p>
                     </li>
                 </ul>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="slider">
+            <div class="container">
+                <div class="slider__head">
+                    <div class="slider__head-img">
+                        <img src="../assets/icons/logo-icon.svg"
+                            alt="logo">
+                    </div>
+                    <div class="slider__head-title">
+                        Get all-in-one with Parqour
+                    </div>
+                </div>
+
+                <div class="slider__content">
+                    <swiper :slidesPerView="3.5"
+                        :spaceBetween="40"
+                        :navigation="true"
+                        :modules="modules"
+                        class="mySwiper">
+                        <swiper-slide>
+                            <div class="slider__content-item">
+                                <img class="slider__content-icon"
+                                    src="../assets/icons/slider-icons/icon.svg"
+                                    alt="slider icon">
+                                <h3 class="slider__content-title">Satisfied <br> customers</h3>
+                                <p class="slider__content-text">No tickets, barcodes or long
+                                    lines. Just quick, free flow
+                                    parking parking experience</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="slider__content-item">
+                                <img class="slider__content-icon"
+                                    src="../assets/icons/slider-icons/icon.svg"
+                                    alt="slider icon">
+                                <h3 class="slider__content-title">Satisfied <br> customers</h3>
+                                <p class="slider__content-text">No tickets, barcodes or long
+                                    lines. Just quick, free flow
+                                    parking parking experience</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="slider__content-item">
+                                <img class="slider__content-icon"
+                                    src="../assets/icons/slider-icons/icon.svg"
+                                    alt="slider icon">
+                                <h3 class="slider__content-title">Satisfied <br> customers</h3>
+                                <p class="slider__content-text">No tickets, barcodes or long
+                                    lines. Just quick, free flow
+                                    parking parking experience</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="slider__content-item">
+                                <img class="slider__content-icon"
+                                    src="../assets/icons/slider-icons/icon.svg"
+                                    alt="slider icon">
+                                <h3 class="slider__content-title">Satisfied <br> customers</h3>
+                                <p class="slider__content-text">No tickets, barcodes or long
+                                    lines. Just quick, free flow
+                                    parking parking experience</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="slider__content-item">
+                                <img class="slider__content-icon"
+                                    src="../assets/icons/slider-icons/icon.svg"
+                                    alt="slider icon">
+                                <h3 class="slider__content-title">Satisfied <br> customers</h3>
+                                <p class="slider__content-text">No tickets, barcodes or long
+                                    lines. Just quick, free flow
+                                    parking parking experience</p>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="slider__content-item">
+                                <img class="slider__content-icon"
+                                    src="../assets/icons/slider-icons/icon.svg"
+                                    alt="slider icon">
+                                <h3 class="slider__content-title">Satisfied <br> customers</h3>
+                                <p class="slider__content-text">No tickets, barcodes or long
+                                    lines. Just quick, free flow
+                                    parking parking experience</p>
+                            </div>
+                        </swiper-slide>
+                    </swiper>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="half">
+            <div class="half-bg first"></div>
+            <div class="container">
+                <div class="half-wrapper">
+                    <div class="half__content">
+                        <h1 class="half__content-title">
+                            Parqour for
+                            gated parking
+                        </h1>
+                        <p class="half__content-text">
+                            <b> Entry</b> - Transients enter without tickets. No need to
+                            register before entering the parking facility. The
+                            system automatically recognizes the license plate and
+                            starts the parking session. Drivers with reservations
+                            through platforms like ParkMobile, SpotHero,
+                            PayByPhone or Honk enter the parking seamlessly
+                            without scanning a barcode and tickets.
+                        </p>
+                        <p class="half__content-text">
+                            <b> Payment</b> – users have numerous payment options:
+                        <ul class="half__content-options">
+                            <li>
+                                <p><b> Online/web based app</b> - No need to download an
+                                    app, users scan the QR code, that leads to a
+                                    payment page</p>
+                            </li>
+                            <li>
+                                <p><b> Terminal payment </b> - cash, credit card, Apple Pay,
+                                    Google Pay</p>
+                            </li>
+                        </ul>
+                        </p>
+                        <p class="half__content-text">
+                            <b> Exit</b> – The license plate is detected and the session
+                            ends
+                        </p>
+                        <div class="half__content-message">No tickets, no attendants, no lines!</div>
+                        <button class="half__content-btn btn-primary">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="half right-side">
+            <div class="half-bg second"></div>
+            <div class="container">
+                <div class="half-wrapper">
+                    <div class="half__content">
+                        <h1 class="half__content-title">
+                            Parqour for
+                            gated parking
+                        </h1>
+                        <p class="half__content-text">
+                            <b> Entry </b> - Transients enter without barriers and tickets. The
+                            system automatically captures the license plate and starts the
+                            billing session.
+                        </p>
+                        <p class="half__content-text">
+                            <b> Payment</b> - First time visitors are instructed to scan QR code
+                            and register in the system by entering their license plate and
+                            adding preferred payment methods (credit card,
+                            Apple/Google pay).
+                        </p>
+                        <p class="half__content-text">
+                            <b> Exit</b> - Registered drivers are charged automatically from a
+                            credit card for the duration of their stay.
+                        </p>
+                        <div class="half__content-message">Returning drivers can enter and exit seamlessly, the system
+                            charges them automatically on exit.</div>
+                        <button class="half__content-btn btn-primary">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="half">
+            <div class="half-bg third"></div>
+            <div class="container">
+                <div class="half-wrapper">
+                    <div class="half__content">
+                        <h1 class="half__content-title">
+                            Parqour for
+                            valet parking
+                        </h1>
+                        <p class="half__content-text">
+                            <b> Parking</b> - Camera automatically captures the license
+                            plate at the entry
+                        </p>
+                        <p class="half__content-text">
+                            <b> Check-in</b> - easy driver registration and communication
+                            via SMS
+                        </p>
+                        <p class="half__content-text">
+                            <b> Payment</b> - Customers pay with one touch via a mobile
+                            app – compatible with Apple Pay and Google Pay.
+                        </p>
+                        <p class="half__content-text">
+                            <b> Exit</b> - The license plate is recorded and the session
+                            ends
+                        </p>
+                        <div class="half__content-message">Enhance transparency of financial flows and control
+                            operations from one platform.</div>
+                        <button class="half__content-btn btn-primary">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="half right-side">
+            <div class="half-bg fourth"></div>
+            <div class="container">
+                <div class="half-wrapper">
+                    <div class="half__content">
+                        <h1 class="half__content-title">
+                            Parqour for
+                            parking validation
+                            & permit
+                            management
+                        </h1>
+                        <p class="half__content-text">
+                            <b> Use cases: </b> employee and tenant parking, monthly permit
+                            management - seamless access for monthly parkers and drivers with
+                            reservations made by third party platforms
+                        <ul class="half__content-options">
+                            <li>
+                                <p><b> Entry </b>- The system checks the license plate and status of the
+                                    permit</p>
+                            </li>
+                            <li>
+                                <p><b> Exit</b> - All entry-exit events are logged and displayed in reports
+                                </p>
+                                <div class="options__items">
+                                    <h3 class="options__items-item">
+                                        No more hang tags, RFID cards and barcode scanning
+                                    </h3>
+                                    <h3 class="options__items-item">
+                                        Integrated with all major reservation platforms (SpotHero,
+                                        ParkMobile, Honk, PayByPhone etc.)
+                                    </h3>
+                                </div>
+
+                            </li>
+                        </ul>
+                        </p>
+                        <div class="half__content-message">Parking validation</div>
+                        <p class="half__content-text">
+                            <b> Use cases:</b> parking validation for hotel, restaurant, shopping mall,
+                            fitness club, hospital visitors etc.
+                        </p>
+
+                        <p class="half__content-text">
+                            <b> Via dashboard.</b> Company/Hotel/Restaurant administrators can
+                            validate the parking session by entering the license plate to the
+                            system using a web based dashboard. Access period can be
+                            customized.
+                        </p>
+                        <p class="half__content-text">
+                            <b> Via</b> promo code. Company administrator/receptionist distribute
+                            promo codes, hotel, restaurant guests easily add the code to their
+                            account by scanning the QR code.
+                        </p>
+
+                        <button class="half__content-btn btn-primary">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="answers">
+            <div class="answers-wrapper">
+                <h1 class="answers-title">Frequently asked questions</h1>
+                <div class="answers__content">
+                    <ul class="akkordeon__list">
+                        <li v-for="(item, index) in akkordeonList"
+                            :key="index"
+                            :class="{ active: item.active }"
+                            class="akkordeon__item">
+                            <div @click="changeActive(item)"
+                                :class="{ active: item.active }"
+                                class="akkordeon__item-head">
+                                <h3>{{ item.header }}</h3>
+                            </div>
+                            <div :class="{ active: item.active }"
+                                class="akkordeon__item-content">
+                                <div class="akkordeon__item-text">
+                                    {{ item.content }}
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="blue__banner">
+            <div class="container">
+                <h1 class="blue__banner-title">
+                    Ready to get
+                    started?
+                </h1>
+                <button class="blue__banner-btn btn-primary">Book a Demo</button>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="about-bg"></div>
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__content-img">
+                        <img src="../assets/icons/logo-icon.svg"
+                            alt="logo">
+                    </div>
+                    <h1 class="about__content-title">
+                        About us
+                    </h1>
+                    <p class="about__content-text">Car parks often provide the first impression of a destination. We focus
+                        on transforming the parking customer
+                        experience into one that is a welcome part of any journey.</p>
+                    <p class="about__content-text">We are a global technology company with extended expertise and experience
+                        in parking management, proptech,
+                        smart city and smart parking technologies.</p>
+                    <p class="about__content-text">Founded in 2020, Parqour already has more than 150 employees. It is
+                        headquartered in the USA with offices or
+                        representatives in 22 countries across Europe, the Middle-East, Central Asia and South-East Asia.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer-logo">
+                        <img src="../assets/icons/footer-logo.svg"
+                            alt="logo">
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__item-title">Menu</h3>
+                        <ul class="footer__item-list">
+                            <li>
+                                <a href="#">Solutions</a>
+                            </li>
+                            <li>
+                                <a href="#">Company</a>
+                            </li>
+                            <li>
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__item-title">Contacts</h3>
+                        <ul class="footer__item-list">
+                            <li>
+                                <a href="#">hello@parqour.com</a>
+                            </li>
+                            <li>
+                                <a href="#">+1 516 468 1202</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <h3 class="footer__item-title">Follow Us</h3>
+                        <ul class="footer__item-list">
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="footer__copyright">
+                    Smart Parking Technologies© 2020 All rights reserved
+                </h3>
+            </div>
+        </footer>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -782,7 +869,7 @@ $light-text: #222222;
     }
 }
 
-.about {
+.whyus {
     margin-top: 100px;
     padding-bottom: 30px;
     display: flex;
@@ -963,7 +1050,7 @@ $light-text: #222222;
 
         .swiper {
             position: relative;
-            right: -40px;
+            right: -10%;
             width: 100%;
             height: 100%;
             padding-top: 110px;
@@ -1227,7 +1314,7 @@ $light-text: #222222;
                 position: absolute;
                 content: '';
                 top: 0;
-                left: -500px;
+                left: -1562.5rem;
                 width: 50000px;
                 height: 100%;
                 transition: .3s all;
@@ -1241,6 +1328,8 @@ $light-text: #222222;
                     opacity: 1;
                     transition: .3s all;
                 }
+
+
             }
 
             &-head {
@@ -1261,6 +1350,8 @@ $light-text: #222222;
                 }
 
                 &.active {
+                    border-bottom: none;
+
                     &::after {
                         transition: .3s all;
                         transform: rotate(90deg);
@@ -1300,6 +1391,132 @@ $light-text: #222222;
                 padding: 30px 0px 40px;
             }
         }
+    }
+}
+
+.blue__banner {
+    padding: 120px 0px 80px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: calc(100% - 246px);
+        height: 100%;
+        background-color: #157FFF;
+        background-image: url('../assets/image/bg-image.png');
+        background-position: center right;
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+    }
+
+    &-title {
+        font-weight: 500;
+        font-size: 64px;
+        line-height: 67px;
+        color: $white-text;
+    }
+
+    &-btn {
+        margin-top: 26px;
+        color: #157FFF;
+    }
+}
+
+.about {
+    padding: 80px 0px;
+    position: relative;
+
+    &-bg {
+        background-image: url('../assets/image/about-bg.jpg');
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: calc(100% - ((100% - 1170px) / 2));
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        padding: 0px 80px;
+
+        &-title {
+            margin-top: 70px;
+            font-weight: 500;
+            font-size: 64px;
+            line-height: 67px;
+            color: $white-text;
+        }
+
+        &-text {
+            margin-top: 36px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 27px;
+            color: $white-text;
+        }
+    }
+}
+
+.footer {
+    padding-top: 110px;
+
+    .container {}
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 40px;
+    }
+
+    &-logo {
+        width: 150px;
+        object-fit: cover;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            color: $light-text;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $light-text;
+            }
+        }
+    }
+
+    &__copyright {
+        text-align: center;
+        padding: 32px 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: $light-text;
     }
 }
 </style>

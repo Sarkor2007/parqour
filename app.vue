@@ -16,6 +16,23 @@
   font-family: 'Inter', sans-serif;
 }
 
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(212, 212, 212);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: gray;
+}
+
+.page {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
 }

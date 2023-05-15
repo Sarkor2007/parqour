@@ -7,6 +7,9 @@
                     <h3 class="header__main-subtitle">Contacts</h3>
                     <h1 class="header__main-title">We’re a distributed team</h1>
                     <p class="header__main-text">We have offices and teams all around the world.</p>
+                    <button class="header__main-btn btn-primary">
+                        Book a demo
+                    </button>
                 </main>
                 <div class="header__map">
                     <img width='100%'
@@ -281,6 +284,16 @@ $light-text: #222222;
             color: $white-text;
             opacity: 0.8;
             margin-top: 24px;
+        }
+
+        &-btn {
+            display: none;
+            color: #0D76F4;
+            margin-top: 32px;
+
+            @media (max-width: 992px) {
+                display: block;
+            }
         }
     }
 

@@ -8,6 +8,9 @@
                     <h1 class="header__main-title">Do roll digital awareness forward. Savvy.</h1>
                     <p class="header__main-text">Move underlying keywords and like product these hanging shift masking.
                         Stand.</p>
+                    <button class="header__main-btn btn-primary">
+                        Book a demo
+                    </button>
                 </main>
             </div>
         </header>
@@ -71,6 +74,16 @@ $light-text: #222222;
             color: $white-text;
             opacity: 0.8;
             margin-top: 24px;
+        }
+
+        &-btn {
+            display: none;
+            color: #0D76F4;
+            margin-top: 32px;
+
+            @media (max-width: 992px) {
+                display: block;
+            }
         }
     }
 

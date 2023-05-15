@@ -80,7 +80,7 @@
         </div>
         <div :class="{ active: isOpenVideo }"
             class="video__item">
-            <iframe width="560"
+            <iframe width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/ccqqaSQm6dc"
                 title="YouTube video player"
@@ -650,6 +650,8 @@ $light-text: #222222;
         visibility: hidden;
         transition: .3s all;
         z-index: 11;
+        max-width: 580px;
+        width: 95%;
 
         &.active {
             opacity: 1;

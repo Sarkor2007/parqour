@@ -34,21 +34,21 @@
             :class="{ open: isOpen }">
             <div class="burger-menu">
                 <ul class="burger-menu__ul">
-                    <li class="burger-menu__ul-li">
-                        <a @click="toggleMenu"
-                            href="#">Home</a>
+                    <li @click="toggleMenu"
+                        class="burger-menu__ul-li">
+                        <nuxt-link to="/">Home</nuxt-link>
                     </li>
-                    <li class="burger-menu__ul-li">
-                        <a @click="toggleMenu"
-                            href="#">Solutions</a>
+                    <li @click="toggleMenu"
+                        class="burger-menu__ul-li">
+                        <nuxt-link to="/solutions">Solutions</nuxt-link>
                     </li>
-                    <li class="burger-menu__ul-li">
-                        <a @click="toggleMenu"
-                            href="#">Company</a>
+                    <li @click="toggleMenu"
+                        class="burger-menu__ul-li">
+                        <nuxt-link to="/company">Company</nuxt-link>
                     </li>
-                    <li class="burger-menu__ul-li">
-                        <a @click="toggleMenu"
-                            href="#">Contacts</a>
+                    <li @click="toggleMenu"
+                        class="burger-menu__ul-li">
+                        <nuxt-link to="/contacts">Contacts</nuxt-link>
                     </li>
                 </ul>
             </div>
@@ -256,7 +256,10 @@ $blue: #0d76f4;
 
         &-btn {
             color: $light-text;
+
+            @media (max-width:992px) {
+                display: none;
+            }
         }
     }
-}
-</style>
+}</style>

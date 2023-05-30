@@ -17,7 +17,7 @@
 }
 
 body {
-  min-width: 400px;
+  min-width: 360px;
 }
 
 ::-webkit-scrollbar {

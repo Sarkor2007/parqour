@@ -480,7 +480,8 @@ const modules = ref([Autoplay, Navigation]);
 const isOpenVideo = ref(false)
 
 const openVideo = () => {
-    isOpenVideo.value = !isOpenVideo.value
+    isOpenVideo.value = !isOpenVideo.value;
+    isOpenVideo.value ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'auto';
 }
 </script>
 
@@ -491,8 +492,7 @@ const openVideo = () => {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100vw;
-    height: vh;
+    width: 100%;
     z-index: 10;
     background: #000;
     opacity: 0;

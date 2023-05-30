@@ -191,6 +191,9 @@ $light-text: #222222;
     @media (max-width: 576px) {
         min-height: 870px;
     }
+    @media (max-width: 360px) {
+        min-height: 920px;
+    }
 
     &__main {
         max-width: 710px;
